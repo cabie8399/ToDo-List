@@ -9,12 +9,15 @@ const Edit = ({ add }) => {
   function noteChange(e) {
     setNote(e.target.value);
   }
+
   function dateChange(e) {
     setDate(e.target.value);
   }
+
   function timeChange(e) {
     setTime(e.target.value);
   }
+  
   function addItem() {
     add(function (prevData) {
       return [
@@ -31,7 +34,7 @@ const Edit = ({ add }) => {
 
   return (
     <div>
-      <h1>ToDo List</h1>
+      <h1>TODO List</h1>
       <p>記事：</p>
       <input type="text" value={note} onChange={noteChange} />
       <p>日期：</p>
