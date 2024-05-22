@@ -12,7 +12,7 @@ const Home = () => {
       <Edit add={setData} />
       <List listData={data} deleteData={setData} />
     </div>
-  );
-};
+  )
+}
 
 export default Home;
